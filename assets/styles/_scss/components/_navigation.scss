@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    padding: 2rem;
+}
+
+.menu {
+    width: 1.5rem;
+
+    &__button {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+.logo {
+    margin-right: auto;
+
+    &__image {
+        width: 250px;
+    }
+}
+
+.nav {
+    display: none;
+    transition: all ease .6s;
+
+    > a {
+        display: block;
+        text-decoration: none;
+        color: $color-primary;
+        padding: 1rem;
+    }
+}
+
+.active, link:hover {
+    background: #ebf2f2;
+    transition: all .3s ease-in-out;
+}
+
+@include respond-to(screen-medium) {
+    .menu__button {
+        display: none;
+    }
+
+    .nav {
+        margin-top: 6rem;
+        display: block;
+
+        > a {
+            display: inline-block;
+            border-left: 2px solid #eeeeee73;
+            font-size: 1.3rem;
+            padding: 1.5rem;
+        }
+    }
+
+    .flex__nav {
+        display: flex;
+    }
+    .header{
+        width: 10%;
+    }
+}

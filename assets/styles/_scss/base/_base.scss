@@ -1,0 +1,43 @@
+/// default font size for the html
+html {
+    box-sizing: border-box;
+}
+
+// body resets
+body {
+     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.spacer{
+    margin-top: 2rem;
+}
+
+strong{
+    font-weight: bold;
+}
+.title{
+    color: $color-primary;
+    font-weight: 100;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
