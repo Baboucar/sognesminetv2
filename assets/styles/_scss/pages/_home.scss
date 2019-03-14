@@ -200,6 +200,7 @@ ol li{
 .knowus{
     background: $color-primary;
     color: $color-white;
+    padding: 3.5rem;
 
     &__title{
         display: flex;
@@ -220,6 +221,12 @@ ol li{
         padding: .5rem;
         border-radius: 5px;
         color: $color-white;
+
+        &:hover{
+            background: #526586;
+           transition: all 0.4s ease 0s;
+        }
+        
 
     }
 }
