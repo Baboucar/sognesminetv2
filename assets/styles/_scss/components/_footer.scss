@@ -17,6 +17,10 @@
         font-size: .9rem;
     }
 }
+.icons{
+    display: flex;
+   
+}
 @include respond-to(tablet-small) {
  .footer{
      display: grid;
