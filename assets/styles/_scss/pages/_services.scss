@@ -1,0 +1,41 @@
+
+.service{
+
+    &__card{
+        padding-top: 2rem;
+    }
+&__header{
+    width: 80%;
+    &--title{
+        text-align:center;
+        color:$color-primary;
+    }
+}
+&__description{
+    color:$color-primary;
+}
+}
+
+.service__card--title{
+    color:$color-primary;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.service__card--image{
+    padding-top: 2rem;
+}
+
+@include respond-to(tablet-large){
+    .service__cards{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+    }
+    .service__card--image {
+         height: 200px;
+    }
+
+}
