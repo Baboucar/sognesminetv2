@@ -28,6 +28,9 @@
 }
 
 @include respond-to(tablet-large){
+    .industry{
+        width: 70%;
+    }
     .service__cards{
         width: 70%;
         display: grid;
@@ -36,6 +39,14 @@
     }
     .service__card--image {
          height: 200px;
+    }
+
+    .flex__services{
+        display: flex;
+      justify-content: space-between;
+    }
+    .flex__gap{
+        width:45%; 
     }
 
 }
