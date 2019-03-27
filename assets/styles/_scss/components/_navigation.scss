@@ -24,11 +24,13 @@
     display: none;
     transition: all ease .6s;
 
+
     > a {
         display: block;
         text-decoration: none;
         color: $color-primary;
         padding: 1rem;
+        font-weight: bold;
     }
 }
 

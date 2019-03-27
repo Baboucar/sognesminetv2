@@ -7,7 +7,7 @@
         
         font-weight: bold;
         background: $color-grey;
-        padding: 1rem;
+        padding: 2rem;
         color: $color-primary;
     }
 
@@ -22,9 +22,35 @@
         width: 450px;
         height: 350px;
     }
+
+    &__vision{
+        padding-top: 4rem;
+        width: 70%;
+        margin: 0 auto;
+        
+        
+    }
+
+   
+}
+
+.vision__image{
+    width: 450px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.partner__image{
+    padding-top: 2rem;
+    display: block;
+    margin: 0 auto;
+
 }
 
 @include respond-to("tablet-large"){
+  
     .expertise{
       &__title{
           font-size: 2.5rem;
@@ -42,5 +68,17 @@
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
       }
+    }
+    .expertise__vision--flex{
+        width: 60%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .partners__images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
     }
 }
