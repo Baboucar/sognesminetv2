@@ -1,0 +1,33 @@
+.expertise{
+    &__title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__section{
+        
+        font-weight: bold;
+        background: $color-grey;
+        padding: 1rem;
+        color: $color-primary;
+    }
+
+    &__number{
+        font-size: 3rem;
+        color: $color-primary;
+    }
+}
+
+@include respond-to("tablet-large"){
+    .expertise{
+      &__title{
+          font-size: 2.5rem;
+      }
+
+      &__section{
+          text-align: center;
+      }
+      &__number{
+    font-size: 8rem;
+      }
+    }
+}
