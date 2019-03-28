@@ -2,6 +2,10 @@
     &__title{
         font-size: 2rem;
         font-weight: 700;
+        background-image: url("/assets/images/Slider_Home.jpg");
+        padding: 6rem;
+        background-position: center;
+        color: $color-white;
     }
     &__section{
         
@@ -62,8 +66,16 @@
       }
       &__number{
     font-size: 8rem;
+    margin-top: 0;
+     &--title{
+         margin-top: -7rem;
+     }
       }
 
+      &__description{
+          width: 60%;
+          margin: 0 auto;
+      }
       &__areas{
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;

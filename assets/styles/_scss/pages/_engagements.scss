@@ -1,0 +1,71 @@
+.engagements{
+
+    &__cardimage{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__title{
+        background-image: url(/assets/images/developpement-durable-la-rationnelle_bck.jpg);
+        padding: 6rem;
+        color: $color-white;
+        background-position: center;
+     
+   
+   
+   }
+   &__line{
+    position: relative;
+    bottom: 1.5rem;
+    z-index: -1;
+   }
+
+   &__number{
+    display: block;
+    text-align: center;
+    background: $color-primary;
+    color: $color-white;
+    width: 1.3rem;
+    height: 25px;
+    margin: 0 auto;
+
+   }
+
+
+}
+
+
+
+.header__image{
+    width: 100%;
+}
+
+
+@include respond-to("tablet-large"){
+
+    .engagements{
+        &__line{
+            width: 10rem;
+        }
+
+        &__quote{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 70%;
+         
+        }
+    }
+.engagements__cards{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+}
+
+.engagementquote__image{
+  
+}
+
+}
