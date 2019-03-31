@@ -35,6 +35,15 @@
 
 }
 
+.engagement{
+   &__image{
+    display: block;
+    margin: 0 auto; 
+   } 
+    &__description{
+        text-align: center;
+    }
+}
 
 
 .header__image{
@@ -64,8 +73,9 @@
 
 }
 
-.engagementquote__image{
-  
+.engagements_areas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 }
