@@ -33,53 +33,175 @@
 
 <main>
     <div class="map">
-        <iframe class="map__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6950466.548279027!2d-11.645793223555188!3d31.721835987871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMorocco!5e0!3m2!1sen!2sgm!4v1551304054841"
-     frameborder="0" width="100%" height="500px" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6950466.548279027!2d-11.645793223555188!3d31.721835987871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMorocco!5e0!3m2!1sen!2sgm!4v1551304054841"
+            frameborder="0" width="100%" height="500px" style="border:0" allowfullscreen></iframe>
     </div>
 
     <section class="grid__contact spacer">
         <div class="coordinates container">
-             <h1 class="title">Nos coordonnées</h1>
-             <p class="coordinates__description">
-                Notre équipe de professionnels se tient à votre disposition <br> pour toute demande d'information, de recrutement ou de devis.
-             </p>
+            <h1 class="title">Nos coordonnées</h1>
+            <p class="coordinates__description">
+                Notre équipe de professionnels se tient à votre disposition <br> pour toute demande d'information, de
+                recrutement ou de devis.
+            </p>
 
-             <div class="coordinates__contact">
-                 <h1 class="title">Contactez-nous</h1>
-                 <p>
+            <div class="coordinates__contact">
+                <h1 class="title">Contactez-nous</h1>
+                <p>
                     Vous pouvez nous joindre par <br> e-mail, téléphone et par voie postale.
-                 </p>
-                 <a href="tel:+212537561308 ">+212537561308 </a>
-                 <p>
-                    20 allee des sablieres  78290 Criossu 
-                        <br>
-                   sogn
-                 </p>
-             </div>
+                </p>
+                <a href="tel:+212537561308 ">+212537561308 </a>
+                <p>
+                    20 allee des sablieres 78290 Criossu
+                    <br>
+                    sogn
+                </p>
+            </div>
         </div>
+
         <div class="contact__form container">
-            <h1 class="contact__title title">Envoyez-nous votre demande</h1>
-            <form action="">
-                <div>
-                    <input class="input" type="text" name="" placeholder="votre nom" >
-                </div>
 
-                <div>
-                    <input class="input" type="email" name="" placeholder="votre e-mail" >
-                </div>
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Contact')" id="defaultOpen">Contact</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Demande de devis</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Recrutement</button>
+            </div>
+            <div id="Contact" class="tabcontent">
+                <h1 class="contact__title title">Envoyez-nous votre demande</h1>
+                <form action="">
+                    <div>
+                        <input class="input" type="text" name="" placeholder="votre nom">
+                    </div>
 
-                <div>
-                    <input class="input" type="text" name="" placeholder="Societe" >
-                </div>
-                <div>
-                    <input class="input" type="text" name="" placeholder="Suject" id="">
-                </div>
+                    <div>
+                        <input class="input" type="email" name="" placeholder="votre e-mail">
+                    </div>
 
-                <div>
-                    <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                    <div>
+                        <input class="input" type="text" name="" placeholder="Societe">
+                    </div>
+                    <div>
+                        <input class="input" type="text" name="" placeholder="Suject" id="">
+                    </div>
+
+                    <div>
+                        <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <a href="http://" class="contact__btn">Envoyer</a>
+                </form>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+             
+                <form action="" method="post">
+                    <div>
+                        <input class="input" type="text" name="" placeholder="votre nom">
+                    </div>
+                    <div>
+                        <input class="input" type="email" name="" placeholder="votre email">
+                    </div>
+                    <div>
+                        <input class="input" type="text" name="" placeholder="Societe">
+                    </div>
+                    <div>
+                        <input class="input" type="number" name="" placeholder="votre nom">
+                    </div>
+                    <div>
+                        <input class="input" type="text" name="" placeholder="ville">
+                    </div>
+                    <div>
+                        <input class="input" type="text" name="" placeholder="sujet">
+                    </div>
+                    <div class="flex__radiobutton spacer-2">
+                        <div class="radio__items">
+                            <label for="Social">Habitat Social</label>
+                            <input type="checkbox" name="social" id="social">
+                        </div>
+                        <div class="radio__items">
+                            <label for="copropete">Copropete</label>
+                            <input type="checkbox" name="" id="">
+                        </div>
+
+                        <div class="radio__items">
+                            <label for="industrie">Entreprise et Industrie</label>
+                            <input type="checkbox" name="" id="industrie">
+                        </div>
+                    </div>
+
+                    <h3>Prestations souhaitées</h3>
+                    <div class="flex__radiobutton">
+                        <div class="radio__items">
+                            <label for="menager">Menager</label>
+                            <input type="checkbox" name="" id="menager">
+                        </div>
+                        <div class="radio__items">
+                            <label for="travaux">Travaux Exceptionnels</label>
+                            <input type="radio" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                   
+                    <a href="http://" class="contact__btn">Envoyer</a>
+
+
+                </form>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+              
+               <div>
+                    <input class="input" type="text" name="" placeholder="votre nom">
                 </div>
-                <a href="http://" class="contact__btn">Envoyer</a>
-            </form>
+                <div>
+                        <input class="input" type="text" name="" placeholder="votre prenom">
+                </div>
+                <div>
+                        <input class="input" type="email" name="" placeholder="votre email">
+                </div>
+                <div>
+                        <input class="input" type="text" name="" placeholder="votre telephone">
+                    </div>
+                    <h3>Postes recherches</h3>
+                    <div class="flex__radiobutton">
+                        <div>
+                            <label for="agent">Agent de service</label>
+                            <input type="checkbox" name="" id="agent">
+                        </div>
+
+                        <div>
+                            <label for="chief">Chief d'equipe</label>
+                            <input type="checkbox" name="" id="chief">
+                        </div>
+
+                        <div>
+                            <label for="inspecteur">inspecteur</label>
+                            <input type="checkbox" name="" id="inspecteur">
+                        </div>
+
+                        <div>
+                            <label for="humaines">Ressources humaines</label>
+                            <input type="checkbox" name="" id="humaines">
+                        </div>
+
+                        <div>
+                            <label for="autes">Autres</label>
+                            <input type="checkbox" name="" id="autes">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Importer votre CV</h3>
+                        <input type="file" name="" id="cv">
+                    </div>
+
+                    <a href="http://" class="contact__btn spacer-2">Envoyer</a>
+
+            </div>
+
 
         </div>
     </section>
