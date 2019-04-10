@@ -42,63 +42,65 @@ layout: default
             </div>
             <div id="Contact" class="tabcontent">
                 <h1 class="contact__title title">Envoyez-nous votre demande</h1>
-                <form action="">
+                <form action="https://formspree.io/syllaharouna740@gmail.com" method="POST">
                     <div>
-                        <input class="input" type="text" name="" placeholder="votre nom">
+                        <input class="input" type="text" name="nom" placeholder="votre nom">
                     </div>
 
                     <div>
-                        <input class="input" type="email" name="" placeholder="votre e-mail">
+                        <input class="input" type="email" name="email" placeholder="votre e-mail">
                     </div>
 
                     <div>
-                        <input class="input" type="text" name="" placeholder="Societe">
+                        <input class="input" type="text" name="societe" placeholder="Societe">
                     </div>
                     <div>
-                        <input class="input" type="text" name="" placeholder="Suject" id="">
+                        <input class="input" type="text" name="suject" placeholder="Suject" id="">
                     </div>
 
                     <div>
-                        <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea class="textarea" name="message" id="" cols="30" rows="10"></textarea>
                     </div>
-                    <a href="http://" class="contact__btn">Envoyer</a>
+                    <!-- <a href="http://" class="contact__btn">Envoyer</a> -->
+                      <input type="submit" class="contact__btn" value="Envoyer">
                 </form>
             </div>
 
             <div id="Paris" class="tabcontent">
              
-                <form action="" method="post">
+                <form action="https://formspree.io/syllaharouna740@gmail.com" method="post">
                     <div>
-                        <input class="input" type="text" name="" placeholder="votre nom">
+                        <input class="input" type="text" name="Nom" placeholder="votre nom">
                     </div>
                     <div>
-                        <input class="input" type="email" name="" placeholder="votre email">
+                        <input class="input" type="email" name="email" placeholder="votre email">
                     </div>
                     <div>
-                        <input class="input" type="text" name="" placeholder="Societe">
+                        <input class="input" type="text" name="societe" placeholder="Societe">
                     </div>
                     <div>
-                        <input class="input" type="number" name="" placeholder="votre nom">
+                        <input class="input" type="number" name="postal" placeholder="Code Postal">
                     </div>
                     <div>
-                        <input class="input" type="text" name="" placeholder="ville">
+                        <input class="input" type="text" name="ville" placeholder="Ville">
                     </div>
                     <div>
-                        <input class="input" type="text" name="" placeholder="sujet">
+                        <input class="input" type="text" name="suject" placeholder="Sujet">
                     </div>
+                    <h3>Secteur(s) d'activité(s)</h3>
                     <div class="flex__radiobutton spacer-2">
                         <div class="radio__items">
                             <label for="Social">Habitat Social</label>
-                            <input type="checkbox" name="social" id="social">
+                            <input type="checkbox" name="habitsocial" value="social" id="social">
                         </div>
                         <div class="radio__items">
                             <label for="copropete">Copropete</label>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="habitsocial" value="copropete" id="">
                         </div>
 
                         <div class="radio__items">
                             <label for="industrie">Entreprise et Industrie</label>
-                            <input type="checkbox" name="" id="industrie">
+                            <input type="checkbox" name="habitsocial" value="entrepreiseetindustrie" id="industrie">
                         </div>
                     </div>
 
@@ -106,72 +108,76 @@ layout: default
                     <div class="flex__radiobutton">
                         <div class="radio__items">
                             <label for="menager">Menager</label>
-                            <input type="checkbox" name="" id="menager">
+                            <input type="checkbox" name="souhaitées" value="menager"  id="menager">
                         </div>
                         <div class="radio__items">
                             <label for="travaux">Travaux Exceptionnels</label>
-                            <input type="radio" name="" id="">
+                            <input type="checkbox" name="souhaitées" value="travaux exceptionnels" id="">
                         </div>
                     </div>
                     <div>
-                        <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea class="textarea" name="message" id="" cols="30" rows="10"></textarea>
                     </div>
 
                    
-                    <a href="http://" class="contact__btn">Envoyer</a>
+                    <!-- <a href="http://" class="contact__btn">Envoyer</a> -->
+                    <input class="contact__btn" type="submit" value="Envoyer">
 
 
                 </form>
             </div>
 
             <div id="Tokyo" class="tabcontent">
-              
+                <form action="https://formspree.io/syllaharouna740@gmail.com" method="POST">
                <div>
-                    <input class="input" type="text" name="" placeholder="votre nom">
+                    <input class="input" type="text" name="nom" placeholder="votre nom" required>
                 </div>
                 <div>
-                        <input class="input" type="text" name="" placeholder="votre prenom">
+                        <input class="input" type="text" name="prenom" placeholder="votre prenom" required>
                 </div>
                 <div>
-                        <input class="input" type="email" name="" placeholder="votre email">
+                        <input class="input" type="email" name="email" placeholder="votre email">
                 </div>
                 <div>
-                        <input class="input" type="text" name="" placeholder="votre telephone">
+                        <input class="input" type="text" name="telephone" placeholder="votre telephone" required>
                     </div>
                     <h3>Postes recherches</h3>
                     <div class="flex__radiobutton">
                         <div>
                             <label for="agent">Agent de service</label>
-                            <input type="checkbox" name="" id="agent">
+                            <input type="checkbox" name="post" value="agent" id="agent">
                         </div>
 
                         <div>
                             <label for="chief">Chief d'equipe</label>
-                            <input type="checkbox" name="" id="chief">
+                            <input type="checkbox" name="post" value="chief d'equipe" id="chief">
                         </div>
 
                         <div>
-                            <label for="inspecteur">inspecteur</label>
-                            <input type="checkbox" name="" id="inspecteur">
+                            <label for="inspecteur">Inspecteur</label>
+                            <input type="checkbox" name="post" value="Inspecteur" id="inspecteur">
                         </div>
 
                         <div>
                             <label for="humaines">Ressources humaines</label>
-                            <input type="checkbox" name="" id="humaines">
+                            <input type="checkbox" name="post" value="humaines" id="humaines">
                         </div>
 
                         <div>
                             <label for="autes">Autres</label>
-                            <input type="checkbox" name="" id="autes">
+                            <input type="checkbox" name="post" value="autes" id="autes">
                         </div>
                     </div>
                     <div>
                         <h3>Importer votre CV</h3>
-                        <input type="file" name="" id="cv">
+                        <input
+                        type="hidden"
+                        role="uploadcare-uploader" />
                     </div>
-
-                    <a href="http://" class="contact__btn spacer-2">Envoyer</a>
-
+<!-- 
+                    <a href="http://" class="contact__btn spacer-2">Envoyer</a> -->
+                    <input class="contact__btn spacer-2" type="submit" value="Envoyer" >
+            </form>
             </div>
 
 

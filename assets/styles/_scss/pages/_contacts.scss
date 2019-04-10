@@ -6,6 +6,9 @@
     border: 2px solid #EEE;
 }
 
+.uploadcare--widget__button_type_open{
+   background: $color-primary;
+}
 ::placeholder{
     padding-left: 1rem;
 }
@@ -21,10 +24,11 @@
     
     width: 8rem;
     background: #465b80;
-    padding: .5rem;
+    padding: 1rem;
     border-radius: 5px;
     color: #fff;
     text-align: center;
+    border:none;
 }
 
 .tab {
