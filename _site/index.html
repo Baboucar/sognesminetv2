@@ -45,6 +45,14 @@ partout au Maroc
 <p class="header__description--primary center-text">
 Copropriété | Habitat Social | Tertiaire
 </p> 
+
+<div id="typed-strings">
+    <p>Nettoyage après sinistre.</p>
+    <p>Remise en état des parties communes</p>
+    <p>Nettoyage après </p>
+    <p>Shampoin</p>
+</div>
+<span id="typed" class=" typed header__description--primary center-text"></span>
   </section> <!--end header-->
 
   <section class="link__toservice">  <!--egin link-->
@@ -228,7 +236,7 @@ Vous souhaitez en savoir plus ? <br>
 Contactez-nous dès maintenant !
 </h2>
 
-  <a href="http://" class="knowus__btn">Contactez-nous</a>
+  <a href="contact.html" class="knowus__btn">Contactez-nous</a>
   </section>  <!--end know us more-->
 
 </main>
@@ -281,6 +289,30 @@ Du Lundi au Vendredi : 8H – 18h
     </div>
 </div>
 </footer
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+<script>
+
+var typed = new Typed('.element', {
+  strings: ["First sentence.", "Second sentence."],
+  typeSpeed: 30
+});
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          smartBackspace: true,
+          typeSpeed: 100,
+          backSpeed: 100,
+        });
+      </script>
 </body>
+
 <script src="../assets/scripts/main.js"></script>
+
 </html>
