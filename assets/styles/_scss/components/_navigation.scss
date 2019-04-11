@@ -17,6 +17,7 @@
 
     &__image {
         width: 250px;
+        padding-left: 3rem;
     }
 }
 
@@ -60,8 +61,11 @@
     .flex__nav {
         display: flex;
         align-items: center;
+        position: fixed;
+    background: white;
+    width: 100%;
     }
-    .header{
-        width: 20%;
-    }
+.header{
+        padding: 0;
+     }
 }

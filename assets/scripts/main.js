@@ -1,5 +1,5 @@
 
-
+    document.getElementById("defaultOpen").click();
 
 function myFunction(e) {
     var elems = document.querySelector(".active");
@@ -46,4 +46,4 @@ function openCity(evt, cityName) {
     
   } 
 
-  document.getElementById("defaultOpen").click();
+
