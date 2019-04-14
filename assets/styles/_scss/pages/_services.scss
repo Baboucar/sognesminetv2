@@ -28,6 +28,11 @@
 }
 
 @include respond-to(tablet-large){
+
+    .services{
+        position: relative;
+        top: 6rem;
+    }
     .industry{
         width: 70%;
         margin: 0 auto;
