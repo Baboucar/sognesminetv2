@@ -161,12 +161,22 @@ ol li{
 
 .card{
     position: relative;
-
+    &:hover{
+        transform: scale(1.2);
+        transition: .5s;
+    }
     &__image{
         position: relative;
         display: block;
         width: 100%;
         height: 350px;
+
+        // &:hover{
+        //     transform: scale(1,1);
+        //     transition: .5s;
+           
+          
+        // }
         
 
         
@@ -181,7 +191,7 @@ ol li{
         left: 0;
         padding-top: 5rem;
         text-align: center;
-        background: #2f3d556e;
+        background: #394b696e;
         opacity: 0;
         transition: .5s;
         transform: translateY(10px);
@@ -191,9 +201,11 @@ ol li{
        
      
 
-        &:hover{
+        &:hover {
             opacity: 1;
             transform: translateY(0);
+          
+           
         }
     }
 }
@@ -270,8 +282,14 @@ ol li{
 .president__message{
     display: grid;
     grid-template-columns: 1fr 1fr;
+  
+    height: 300px;
+    margin: 0 auto;
 }
 
+.president__background{
+    background-color: #f2f2f2;
+}
 
 .president__title{
     font-size: 1.5rem;
