@@ -1,5 +1,6 @@
 .expertise{
     padding-top: 2rem;
+    
     &__title{
         font-size: 2rem;
         font-weight: 700;
@@ -26,6 +27,7 @@
         margin: 0 auto;
         width: 450px;
         height: 350px;
+        
     }
 
     &__vision{
@@ -48,9 +50,14 @@
 }
 
 .partner__image{
+    width: 200px;
+    height: 200px;
     padding-top: 2rem;
     display: block;
     margin: 0 auto;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 
 }
 
@@ -91,7 +98,9 @@
 
     .partners__images{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    
     
     }
 }

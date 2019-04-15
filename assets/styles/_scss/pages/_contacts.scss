@@ -78,12 +78,33 @@
 
 
   .flex__radiobutton{
-      display: flex;
+      
   }
   .radio__items{
       padding-left: 2rem;
   }
+  @include respond-to("tablet-small"){
+    .flex__radiobutton{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+  
+  }
+  }
 @include respond-to("tablet-large"){
+ input[type="checkbox"]{
+  margin-left: 1rem;
+ }
+  .flex__radiobutton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    div{
+      display: flex;
+   
+    align-items: center;
+    width: 10rem;
+    }
+}
     .grid__contact{
         width: 70%;
         margin: 4rem auto;
