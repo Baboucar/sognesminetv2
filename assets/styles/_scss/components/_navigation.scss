@@ -41,6 +41,10 @@
 }
 
 @include respond-to(screen-medium) {
+
+    .logo__image{
+        width: 450px;
+    }
     .menu__button {
         display: none;
     }
