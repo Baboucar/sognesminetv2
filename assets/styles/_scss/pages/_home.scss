@@ -261,6 +261,8 @@ ol li{
     .professional{
         display: grid;
         grid-template-columns: 1fr 1fr;
+         position: relative;
+         z-index: -1;
 
     }
 
@@ -292,6 +294,8 @@ ol li{
 
 .president__background{
     background-color: #f2f2f2;
+    position: relative;
+    z-index: -1;
 }
 
 .president__title{
@@ -303,5 +307,7 @@ ol li{
 .slogan{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    z-index: -1;
 }
 }
