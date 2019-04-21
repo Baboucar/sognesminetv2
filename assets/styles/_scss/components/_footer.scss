@@ -29,7 +29,7 @@
         padding-left: 1rem;
     }
 }
-@include respond-to(tablet-small) {
+@include respond-to(tablet-large) {
  .footer{
      display: grid;
      grid-template-columns: 2fr 1fr 1fr 2fr;

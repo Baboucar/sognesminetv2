@@ -25,6 +25,7 @@
 
 .service__card--image{
     padding-top: 2rem;
+    width: 100%;
 }
 
 @include respond-to(tablet-large){
